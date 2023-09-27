@@ -9,13 +9,23 @@ int main()
   cout << "test";
 
   cout << "test2";
-
   cout << "Mas cosas que imprimir" << endl;
   cout << "Laptop" << endl;
 
-  for (int i = 0; i < 5; i++)
+  for (int i = 0; i < 5; i++){
+  cout << "hola";
+  }
+  if (true)
   {
-    cout << "Imprimir 5 veces" << endl;
+    cout << "Jaja no" << endl;
+  }
+  else
+  {
+    cout << "Aquí nunca se va a imprimir" << endl;
+    if (false)
+    {
+      cout << "Aquí tampoco" << endl;
+    }
   }
 
   if (5 < 6)
