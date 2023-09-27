@@ -17,11 +17,10 @@ int main()
   else
   {
     cout << "Aquí nunca se va a imprimir" << endl;
-  }
-
-  for (int i = 0; i < 5; i++)
-  {
-    cout << "Imprimir 5 veces" << endl;
+    if (false)
+    {
+      cout << "Aquí tampoco" << endl;
+    }
   }
 
   return 0;
