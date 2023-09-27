@@ -15,5 +15,10 @@ int main()
     cout << "Imprimir 5 veces" << endl;
   }
 
+  if (5 < 6)
+  {
+    cout << "Verdadero" << endl;
+  }
+
   return 0;
 }
