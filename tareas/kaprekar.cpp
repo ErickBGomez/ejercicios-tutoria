@@ -87,4 +87,6 @@ int main()
   {
     cout << "Ingrese un número con 4 cifras" << endl;
   }
+
+  return 0;
 }
