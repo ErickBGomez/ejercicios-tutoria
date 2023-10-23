@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void OrdenarMenorAMayor(int, int[]);
+void EncontrarMayor(int, int[]);
 
 int main()
 {
@@ -19,12 +19,12 @@ int main()
     cin >> numeros[i];
   }
 
-  OrdenarMenorAMayor(cantidad, numeros);
+  EncontrarMayor(cantidad, numeros);
 
   return 0;
 }
 
-void OrdenarMenorAMayor(int cantidad, int numeros[])
+void EncontrarMayor(int cantidad, int numeros[])
 {
   for (int i = 0; i < cantidad - 1; i++)
   {
