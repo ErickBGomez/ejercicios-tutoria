@@ -9,30 +9,37 @@ int main()
 {
   const int dimension = 10;
   int numeros[dimension];
-  int input;
-  int minCercano = 100;
+  int entrada;
+  int minimoCercano = 0;
 
+  // Generar números aleatorios y guardarlo en array numeros
   for (int i = 0; i < dimension; i++)
   {
     numeros[i] = random(1, 10);
   }
 
+  // Imprimir array de números
   for (int i = 0; i < dimension; i++)
   {
     cout << numeros[i] << ", ";
   }
 
+  // Pedir la entrada del usuario
   cout << "\n\nIngrese un número\n> ";
-  cin >> input;
+  cin >> entrada;
 
-  // Corregir esto luego
+  // Verificar el número mínimo más cercano (salirse del bucle una vez encontrado)
   for (int i = 0; i < dimension; i++)
   {
-    if (input > numeros[i])
-      minCercano = numeros[i];
+    if (entrada > numeros[i])
+    {
+      minimoCercano = numeros[i];
+      break;
+    }
   }
 
-  cout << "Mínimo cercano: " << minCercano << endl;
+  // Imprimir resultado
+  cout << "Mínimo cercano: " << minimoCercano << endl;
 
   return 0;
 }
