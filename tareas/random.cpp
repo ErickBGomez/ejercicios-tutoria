@@ -44,6 +44,7 @@ int main()
   return 0;
 }
 
+// Generar números aleatorios con rango mínimo y máximo (inclusivos)
 int random(int min, int max)
 {
   random_device rd;
