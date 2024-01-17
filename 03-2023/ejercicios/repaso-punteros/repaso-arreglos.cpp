@@ -59,6 +59,8 @@ void ImprimirValoresYDirecciones(int *array)
   for (int i = 0; i < dimension; i++)
   {
     cout << " - " << *(array + i) << " (" << (array + i) << ")" << endl;
+    // *: Obtiene el valor de cada elemento
+    // Sin *: Obtiene la dirección de cada elemento
   }
 
   cout << endl;
